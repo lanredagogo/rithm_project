@@ -1,71 +1,150 @@
-body {
+* {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    font-size: 18px;
-
 }
-.nav, .footer-list {
+body {
+    color: #202124;
+}
+
+ul {
+    display:flex;
+    justify-content: right;
+    font-size: 80%;
     list-style: none;
+    text-decoration: none;
+    
+}
+ul li:nth-child(2), li:nth-child(1) {
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-left: 5px;
 }
 
-.nav {
-    display: block;
-    justify-content:space-between;
-    text-align: right;
-    background-color: rgb(196, 193, 193) 
+
+ul div {
+    background-color: rgb(118, 114, 114);
+    border-radius: 25pc;
+    height: 35px;
+    width: 35px;
+    border: 3px solid black;
+    border-top: 3px solid red;
+    border-right: 3px solid green;
+    border-bottom: 3px solid yellow;
+    border-left: 3px solid blue;
+   margin-left: 15px;
+   margin-right: 10px;
+   
 }
 
-.image, .form {
+
+.gb_d {
+    font: 13px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-top: 4px;
+    padding-left: 100px;
+}
+
+
+.image {
     text-align: center;
-    justify-content: center;
+    padding-top: 50px;
+   
    }
 
-input {
+.input {
+    
     width: 800px;
-    height: 40px;
-    border-radius: 50px;
-    border: 1px solid rgb(233, 225, 225);
-    font-size: 18px;
-    padding-left: 20px;
-    }
-.form {
-    padding-bottom: 20px;
-    padding-top: 10px;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid rgb(233, 225, 225);
+        font-size: 18px;
+        margin-left: 300px;
+        margin-top: 30px;
+        margin-bottom: 50px;
 }
+       .camera, .mic {
+        
+        font-size: 14px;
+        font-family: arial,
+        sans-serif;
+        color: #202124;
+        cursor: pointer;
+        fill: rgb(66, 133, 244);
+        cx: 10;
+        cy: 10;
+        r: 10;
+        height: 24px;
+        width: 24px;
+       }
+
+   
+
 
 .google {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
     
+    }
+
+.google .first, .second {
+    background-color: #f8f9fa;
+    height: 37px;
+    line-height: 27px;
+    font-size: 14px;
+    margin-right: 30px;
+    padding: 0 16px;
+    border-radius: 4px;
+    border: 1px solid #f8f9fa;
+    text-align: center;
 }
 
-.google-src, .lucky { 
-    display: flex;
-        text-align: center;
-        font-size: 18px;
-        border: 10px;
-    background-color: rgb(220, 220, 221);
-    font-size: 18px;
-}
+
+
 
 .offered {
     text-align: center;
-    padding-bottom: 20px;
     justify-content: space-between;
+    margin-bottom: 88px;
+    margin-top: 30px;
+    
+}
+footer {
+    background: #f2f2f2;
+    margin-left: -10px;
+    margin-right: -5px;
+    margin-bottom: -5;
+
 }
 
 
-.footer-list {
+footer p {
+    padding: 10px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    margin-bottom: 3px;
+    
+   
+}
+
+
+footer ul {
     display: flex;
     justify-content:space-between;
-    padding-left: 0%;
-    padding-bottom: 2px;
-    background-color: rgba(249, 249, 249, 0.857);
-    margin-bottom: 0px;
-    font-size: 18px;
+    font-size: 14px;
+    list-style: none;
+    margin-top: 5px;
+    padding: 10px 30px;
+
+   
+   
 }
+
 a:link {
     text-decoration: none;
+    padding-left: 6px;
 }
 a:visited {
     color: black;
@@ -76,7 +155,4 @@ a:hover {
 }
 a:active {
     color: aqua;
-}
-footer p {
-    text-align: left;
 }
