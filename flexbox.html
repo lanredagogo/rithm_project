@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Challenge 3</title>
+    <title>Challenge 4</title>
+    <meta lang=“en" />
     <style>
       * {
         box-sizing: border-box;
       }
       body {
-        background-color: whitesmoke;
-        width: 1000px;
-        height: 600px;
-        margin: auto;
-        margin-left: 300px;
-      }
-
-      div {
-        background-color: rgb(2, 62, 138);
-        width: 800px;
-        height: 570px;
+        background-color: #80b918;
       }
 
       #wrap {
+        height: 515px;
+        background-color: #d4d700;
+        width: 800px;
+        margin: auto;
+      }
+      #header {
+        background-color: #eeef20;
         display: flex;
+        justify-content: right;
+        width: 80%;
+        height: 70px;
+        margin: auto;
       }
-
+      #header h1 {
+        align-self: center;
+        padding-right: 20px;
+      }
       #nav {
-        color: white;
-        flex-direction: column;
-        background-color: rgb(0, 150, 199);
-        width: 200px;
-        height: 500px;
-        margin-top: 0%;
-        margin-left: 40px;
-      }
-      h2 {
-        font-size: 26px;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        padding-left: 15px;
-        padding-top: 15px;
+        background-color: black;
+        width: 80%;
+        height: 30px;
+        margin: auto;
+        border-bottom: 2px dashed white;
       }
       #nav ul {
-        font-size: 18px;
-        padding-left: 60px;
-        color: white;
+        display: flex;
+        margin-top: 0%;
+        list-style: none;
+        text-decoration: none;
+        padding-left: 5px;
+        padding-top: 5px;
       }
-      #nav a {
-        color: white;
-      }
-      #content {
-        background-color: rgb(0, 180, 216);
-        width: 600px;
-        height: 500px;
-        margin-right: 40px;
-        padding-top: 20px;
-        text-align: center;
+      #nav ul li > a {
+        text-decoration: none;
+        padding: 20px;
+        text-align: left;
+        color: aliceblue;
       }
 
-      #content p {
-        font-size: 18px;
+      #sidebar {
+        float: right;
+        background-color: #eeef20;
+        height: 415px;
+        width: 180px;
+        margin-right: 80px;
+      }
+      #sidebar ul {
+        padding: auto;
+      }
+      h2 {
         padding-left: 15px;
-        padding-right: 15px;
+        padding-top: 0px;
+        font-size: 16px;
+        font-weight: 400;
       }
 
-      #content ul {
+      #content {
+        background-color: #ffff3f;
+        margin-top: auto;
+        padding-top: 1px;
+        width: 540px;
+        height: 415px;
+        margin-left: 80px;
+        padding-left: 15px;
+        padding-right: 5px;
+      }
+      #content p {
+      }
+      #content ul > li {
         list-style: none;
         font-size: 18px;
-        padding-left: 30px;
-      }
-      h1 {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-
-      .copyright {
-        color: white;
-        font-size: 12px;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
     <div id="wrap">
+      <div id="header">
+        <h1>Shakespear.net</h1>
+      </div>
       <div id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Writings</a></li>
+          <li><a href="#">Sonnets</a></li>
+          <li><a href="#">Life Story</a></li>
+          <li><a href="#">About Shakespear.net</a></li>
+        </ul>
+      </div>
+      <div id="sidebar">
         <h2>Sonnet Index</h2>
         <ul>
           <li><a href="#">Sonnet #1</a></li>
@@ -111,10 +134,11 @@
           <li>Nor lose possession of that fair thou ow'st,</li>
           <li>Nor shall death brag thou wander'st in his shade,</li>
           <li>When in eternal lines to time thou grow'st,</li>
-          <li>So long as men can breathe, or eyes can see,</li>
-          <li>So long lives this, and this gives life to thee.</li>
+          <!-- <li>So long as men can breathe, or eyes can see,</li>
+          <li>So long lives this, and this gives life to thee.</li>-->
         </ul>
-
+      </div>
+      <!--- <div id="footer">
         <p class="copyright">
           See the
           <a href="http://en.wikipedia.org/wiki/Shakespeare%27s_Sonnets">
@@ -122,7 +146,7 @@
           >
           Wikipedia article for more information
         </p>
-      </div>
+      </div>-->
     </div>
   </body>
 </html>
